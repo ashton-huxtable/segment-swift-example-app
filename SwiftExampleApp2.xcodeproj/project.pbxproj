@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1662509F2EF5D06B00A64237 /* Segment in Frameworks */ = {isa = PBXBuildFile; productRef = 1662509E2EF5D06B00A64237 /* Segment */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		012C54BB2EBA7FF600C6EB05 /* SwiftExampleApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExampleApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1662509F2EF5D06B00A64237 /* Segment in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = SwiftExampleApp2;
 			packageProductDependencies = (
+				1662509E2EF5D06B00A64237 /* Segment */,
 			);
 			productName = SwiftExampleApp2;
 			productReference = 012C54BB2EBA7FF600C6EB05 /* SwiftExampleApp2.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 012C54B22EBA7FF600C6EB05;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1662509D2EF5D06B00A64237 /* XCRemoteSwiftPackageReference "analytics-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 012C54BC2EBA7FF600C6EB05 /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1662509D2EF5D06B00A64237 /* XCRemoteSwiftPackageReference "analytics-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/segmentio/analytics-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1662509E2EF5D06B00A64237 /* Segment */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1662509D2EF5D06B00A64237 /* XCRemoteSwiftPackageReference "analytics-swift" */;
+			productName = Segment;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 012C54B32EBA7FF600C6EB05 /* Project object */;
 }
